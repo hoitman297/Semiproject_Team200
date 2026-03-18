@@ -1,0 +1,7 @@
+        const dTabs = document.querySelectorAll('.d-tab');
+        dTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                dTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });

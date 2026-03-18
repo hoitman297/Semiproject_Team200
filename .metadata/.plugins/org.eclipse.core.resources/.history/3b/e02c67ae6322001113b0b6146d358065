@@ -1,0 +1,16 @@
+package com.semi.spring.overwatch.model.service;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.kh.spring.board.model.dao.BoardDaoImpl;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
+@Repository
+@RequiredArgsConstructor
+public class OverwatchServiceImpl implements OverwatchService{
+	
+	
+}

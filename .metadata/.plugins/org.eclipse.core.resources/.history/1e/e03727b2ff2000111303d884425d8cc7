@@ -1,0 +1,86 @@
+$(document).ready(function () {
+    // 1. 공통 변수 및 요소 선택
+    const $mapImg = $('#mapImg');
+    const $canvas = $('#canvas');
+    // 에러 발생했던 부분: 요소 선택 추가
+    const $mainMenu = $('#mainMenu'); 
+
+    // 프로젝트 컨텍스트 경로 (사진상 프로젝트명 반영)
+    const cp = "/SemiProject_Team200";
+
+    // 2. 자산 및 마커 데이터
+    const mapAssets = {
+        "에란겔 (Erangel)": cp + "/resources/img/Erangel_Main_High_Res.PNG",
+        "미라마 (Miramar)": cp + "/resources/img/Miramar_Main_High_Res.png",
+        "사녹 (Sanhok)": cp + "/resources/img/Sanhok_Main_High_Res.png",
+        "비켄디 (Vikendi)": cp + "/resources/img/Vikendi_Main_High_Res.png",
+        "테이고 (Taego)": cp + "/resources/img/Taego_Main_High_Res.png",
+        "론도 (Rondo)": cp + "/resources/img/Rondo_Main_High_Res.png"
+    };
+
+    const markerData = {
+        "기본 지도": [{ t: '30%', l: '45%', c: '#3b82f6' }, { t: '25%', l: '55%', c: '#3b82f6' }],
+        "차량 스폰": [{ t: '40%', l: '50%', c: '#fbbf24' }, { t: '60%', l: '30%', c: '#fbbf24' }],
+        "선박 위치": [{ t: '85%', l: '52%', c: '#06b6d4' }],
+        "비밀 방/창고": [{ t: '15%', l: '20%', c: '#a855f7' }],
+        "글라이더": [{ t: '12%', l: '75%', c: '#10b981' }]
+    };
+
+    // 3. 마커 업데이트 함수
+    function updateMarkers(type) {
+        // 기존 마커 제거
+        $canvas.find('.marker').remove();
+
+        if (markerData[type]) {
+            $.each(markerData[type], function (i, d) {
+                const $marker = $('<div class="marker"></div>').css({
+                    top: d.t,
+                    left: d.l,
+                    backgroundColor: d.c
+                });
+                $canvas.append($marker);
+            });
+        }
+    }
+
+    // 4. 지도 선택 버튼 클릭 이벤트
+    $('.map-btn').on('click', function () {
+        const $btn = $(this);
+        const mapName = $btn.text().trim();
+
+        // 버튼 활성화 처리
+        $btn.addClass('active').siblings('.map-btn').removeClass('active');
+
+        // 이미지 교체
+        const newSrc = mapAssets[mapName];
+        if (newSrc) {
+            $mapImg.attr('src', newSrc);
+        }
+        
+        updateMarkers("기본 지도");
+
+        // 필터 초기화
+        $('.filter-item').removeClass('active').first().addClass('active');
+    });
+
+    // 5. 필터 아이템 클릭 이벤트
+    $('.filter-item').on('click', function () {
+        const $item = $(this);
+        const filterType = $item.text().trim();
+
+        $item.addClass('active').siblings('.filter-item').removeClass('active');
+        updateMarkers(filterType);
+    });
+
+    // 6. 메인 메뉴 드롭다운 관련 이벤트 (에러 방지용)
+    if ($mainMenu.length > 0) {
+        $mainMenu.on('click', function() {
+            // 여기에 메뉴 클릭 시 동작할 코드 작성 (예: 드롭다운 토글)
+            $(this).find('.dropdown-content').toggle();
+        });
+    }
+
+    // 7. 초기 실행
+    $mapImg.attr('src', mapAssets["에란겔 (Erangel)"]);
+    updateMarkers("기본 지도");
+});

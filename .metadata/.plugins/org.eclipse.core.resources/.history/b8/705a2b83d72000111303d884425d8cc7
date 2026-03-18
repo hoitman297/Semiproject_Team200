@@ -1,0 +1,23 @@
+$(document).ready(function() {
+    /* 1. 탭 클릭 이벤트 (기존 로직 유지) */
+    $('.tab-item').on('click', function() {
+        $('.tab-item').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    /* 2. 헤더 드롭다운 메뉴 제어 */
+    const $mainMenu = $('#mainMenu');
+
+    // 클릭하면 열기/닫기
+    $mainMenu.on('click', function(e) {
+        $(this).toggleClass('show');
+        e.stopPropagation(); // 클릭 이벤트가 바디로 퍼지는 것을 방지
+    });
+
+    // 메뉴 바깥쪽 클릭하면 닫기
+    $(window).on('click', function() {
+        if ($mainMenu.hasClass('show')) {
+            $mainMenu.removeClass('show');
+        }
+    });
+});

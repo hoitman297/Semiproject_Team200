@@ -1,0 +1,15 @@
+package com.semi.spring.overwatch.model.service;
+
+import org.springframework.stereotype.Repository;
+
+import com.kh.spring.board.model.dao.BoardDao;
+
+import lombok.RequiredArgsConstructor;
+
+
+@Repository
+@RequiredArgsConstructor
+public class OverwatchServiceImpl implements OverwatchService{
+	
+	
+}

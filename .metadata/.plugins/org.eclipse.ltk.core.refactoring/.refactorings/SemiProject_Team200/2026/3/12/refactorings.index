@@ -1,0 +1,91 @@
+1773622263405	Rename resource 'home.jsp'
+1773622858631	Delete element
+1773622930975	Copy file
+1773623047100	Delete element
+1773623060886	Delete element
+1773623095367	Rename resource 'js'
+1773623100172	Rename resource 'scripy'
+1773623370754	Delete element
+1773624499133	Move folders
+1773624530988	Delete element
+1773624560819	Delete element
+1773624641900	Move folder
+1773625404353	Rename resource 'script.js'
+1773625972330	Rename resource 'style'
+1773625978465	Rename resource 'script'
+1773626604240	Copy file
+1773626628677	Copy file
+1773626816008	Move folder
+1773627443977	Move folder
+1773628048831	Rename resource 'overwatch_script.js'
+1773628053807	Rename resource 'overwatch_style.css'
+1773629165251	Delete elements
+1773629196000	Copy files
+1773629198037	Copy files
+1773629239348	Copy files
+1773629248292	Copy file
+1773629250338	Copy file
+1773629253340	Delete elements
+1773629318470	Move file
+1773629321159	Delete element
+1773629325867	Rename resource 'main_script'
+1773629328195	Move file
+1773629331270	Delete element
+1773629334751	Rename resource 'overwatch_script'
+1773629621140	Delete elements
+1773629622529	Copy files
+1773629627600	Delete element
+1773629654811	Copy files
+1773629704641	Rename resource 'overwatch_infor.jsp'
+1773629710108	Rename resource 'overwatch_main.jsp'
+1773629716352	Rename resource 'lol.jsp'
+1773629739806	Rename resource 'overwatch_infor.jsp'
+1773629752504	Rename resource 'overwatch_herao_info.jsp'
+1773629773595	Copy file
+1773629776161	Delete element
+1773629787111	Copy file
+1773629804033	Copy file
+1773630142388	Delete elements
+1773631963984	Delete element
+1773632674967	Delete elements
+1773632681912	Copy files
+1773632729624	Copy files
+1773632735907	Delete element
+1773632746810	Copy file
+1773632808465	Delete elements
+1773636615698	Rename resource 'lol_item_info.jsp'
+1773636620429	Rename resource 'lol_main.jsp'
+1773636624562	Rename resource 'lol_map_info.jsp'
+1773641873210	Delete element
+1773641879436	Copy files
+1773641883385	Delete elements
+1773642046160	Move files
+1773645076112	Rename resource 'batterground'
+1773645092574	Rename resource 'batter_item_info.jsp'
+1773645102036	Rename resource 'batter_map_info.jsp'
+1773645109007	Rename resource 'batter_main.jsp'
+1773645177103	Rename resource 'batterground'
+1773706883713	Copy package
+1773706895218	Copy package
+1773706970148	Rename package 'com.semi.spring.battleground'
+1773706977667	Rename package 'com.semi.spring.lol'
+1773707220874	Rename package 'com.semi.spring.overwatch'
+1773707733721	Delete element
+1773707734871	Delete element
+1773713743690	Copy compilation unit
+1773713777350	Rename type 'OverwatchController'
+1773713784811	Rename type 'LOLController'
+1773715186258	Delete element
+1773793438241	Delete elements
+1773793462080	Copy packages
+1773793501823	Copy packages
+1773793514399	Delete element
+1773793519017	Rename package 'com.semi.spring.lol.model.dao.copy'
+1773793521609	Rename package 'com.semi.spring.lol.model.service.copy'
+1773793524534	Rename package 'com.semi.spring.lol.model.vo.copy'
+1773793529225	Rename package 'com.semi.spring.battleground.model.dao.copy.copy'
+1773793533416	Rename package 'com.semi.spring.battleground.model.service.copy.copy'
+1773793539089	Rename package 'com.semi.spring.battleground.model.vo.copy.copy'
+1773793556349	Rename type 'OverwatchDao'
+1773798385927	Delete element
+1773798388664	Delete element
