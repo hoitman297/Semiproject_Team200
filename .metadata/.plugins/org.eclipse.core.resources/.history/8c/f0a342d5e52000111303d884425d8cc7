@@ -1,3 +1,0 @@
-$(document).on('click', '.d-tab', function() {
-    $(this).addClass('active').siblings().removeClass('active');
-});

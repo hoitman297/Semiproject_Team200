@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;spring-legacy&apos;" deleteContents="false" description="Delete resource &apos;spring-legacy&apos;" element1="/spring-legacy" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1772601894774"/>
-</session>
