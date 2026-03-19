@@ -1,9 +1,0 @@
-package com.semi.spring.battleground.controller;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-public class BattlegroundController {
-	@Controller
-	@RequestMapping("/battleground")
-}
