@@ -3,14 +3,12 @@ package com.semi.spring.board.model.vo;
 import java.util.Date;
 //import java.util.List;
 
-import org.apache.ibatis.type.Alias;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Data
-public class Board {
+public class BoardMap {
 	private int boardNo;
 	private String boardTitle;
 	private String boardContent;
