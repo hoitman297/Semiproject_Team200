@@ -3,14 +3,13 @@ package com.semi.spring.member.model.vo;
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Data
-@NoArgsConstructor
+@Getter @Setter @NoArgsConstructor
+@AllArgsConstructor @ToString
 public class Member {
 	private int userNo;
     private String userId;

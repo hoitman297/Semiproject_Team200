@@ -3,14 +3,11 @@
 <configuration>
 
 	<settings>
-		<setting name="mapUnderscoreToCamelCase" value="true" />
-		<setting name="jdbcTypeForNull" value="NULL" />
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<setting name="jdbcTypeForNull" value="NULL"/>
 	</settings>
 
 	<typeAliases>
-		<package name="com.semi.spring.board.model.vo" />
-		<package name="com.semi.spring.member.model.vo"/>
-		<package name="com.semi.spring.security.model.vo"/>
-		<package name="com.semi.spring.common.model.vo"/>
+		<package name="com.semi.spring"/>
 	</typeAliases>
 </configuration>
